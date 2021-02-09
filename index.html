@@ -1,1 +1,76 @@
-test
+<!doctype html>
+<html>
+<head>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <style>
+    .box17{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+.box17:before, .box17:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.box17:before {left: 10px;}
+.box17:after {right: 10px;}
+.box17 p {
+    margin: 0; 
+    padding: 0;
+}
+      .kakomi-te1 {
+ margin: 2em auto; 
+ padding: 1em 1.5em;
+ width: 90%; /*幅の調節*/
+ color: #777777; /* 文字色 */
+ background-color: #fff; /* 背景色 */
+ border: 4px solid #f6bfbc; /*線の太さ・色*/
+ border-radius: 3em .8em 3em .7em/.9em 2em .8em 3em;
+}
+body {
+  font-family:"Meiryo UI", serif;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="row">
+          <div class="col-sm text-center h1 p-5"> 飲酒駆動開発 </div>
+        </div>
+      <div class="col-9">
+        <!-- 記事 start -->
+        <div class="row box17">
+          <div class="col-sm border-bottom h4" style="padding:10px;"> One of three colum </div>
+          <div class="row">
+            <div class="col-sm p-3 text-break"> unko <br> </div>
+          </div>
+        </div>
+        <!-- 記事 end -->
+        <!-- 記事 start -->
+        <div class="row box17">
+          <div class="col-sm border-bottom h4" style="padding:10px;"> One of three colum </div>
+          <div class="row">
+            <div class="col-sm p-3 text-break"> unko <br> </div>
+          </div>
+        </div>
+        <!-- 記事 end -->
+      </div>
+      <div class="col-3" style="padding-left: 30px;">
+          <div class="box17">aaaaaaaaaaaaaaa</div>
+      </div>
+   </div>
+</body>
+</html>
